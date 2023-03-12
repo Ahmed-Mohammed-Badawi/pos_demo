@@ -1,0 +1,6 @@
+<svg id="Location" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Location-2" data-name="Location">
+    <path id="Vector" d="M16,8.609c0,2.867-2.909,7.146-5.219,10.092-1.205,1.537-1.808,2.3-2.781,2.3s-1.576-.768-2.781-2.3C2.909,15.755,0,11.476,0,8.609,0,3.854,3.582,0,8,0s8,3.854,8,8.609Z" transform="translate(4 1)" fill="none" stroke="#6c757d" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M8,6A3,3,0,1,1,5,9,3,3,0,0,1,8,6Z" transform="translate(4 1)" fill="none" stroke="#6c757d" stroke-width="1.5"/>
+  </g>
+</svg>

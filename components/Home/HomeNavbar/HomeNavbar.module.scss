@@ -1,0 +1,93 @@
+.Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .User {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .Image_Container {
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            border: transparent;
+            border-radius: 50%;
+            padding: 0.5rem;
+            box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                bottom: 0.5rem;
+                right: 0.5rem;
+                width: calc(100% - 1rem);
+                height: calc(100% - 1rem);
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+        }
+
+        h1{
+            position: relative;
+            font-weight: 400;
+            font-size: 1.8rem;
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                right: 0;
+                width: 65%;
+                height: 2px;
+                background-color: var(--color-primary);
+                border-radius: 20px;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 0;
+                width: 65%;
+                height: 2px;
+                background-color: var(--color-primary);
+                border-radius: 20px;
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px){
+                font-size: 1.4rem;
+                margin: 0 0rem 0 1rem;
+            }
+        }
+    }
+
+    button.Logout {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0.5rem;
+        border: transparent;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        border: 1px solid #eeeeee;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+        &:focus {
+            outline-width: 1px;
+            outline-color: var(--color-primary);
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}

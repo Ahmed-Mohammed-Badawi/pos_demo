@@ -1,0 +1,103 @@
+.createCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 15rem);
+    padding: 8rem 5rem 5rem;
+
+    &__container {
+        width: 100%;
+        max-width: 60rem;
+        padding: 5rem;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+
+            span{
+                font-size: 1.4rem;
+                color: var(--color-item-price);
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+
+        button {
+            width: 100%;
+            max-width: 20rem;
+            font-family: var(--font-main);
+            font-size: 1.5rem;
+            border: transparent;
+            border-radius: 5px;
+            padding: 1.3rem 3rem;
+            color: #fff;
+            background-color: var(--color-primary);
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                background-color: rgba(#6571ff, $alpha: 0.8);
+            }
+
+            &:active {
+                transform: scale(0.9);
+                background-color: var(--color-primary);
+            }
+        }
+    }
+
+    &__input_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        label {
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+            color: var(--color-item-price);
+            span {
+                color: #6571ff;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-clip: padding-box;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.313rem;
+        color: var(--color-item-price);
+        display: block;
+        font-family: var(--font-main);
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 0.688rem 0.938rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        width: 100%;
+        outline: none;
+        margin-bottom: 2rem;
+        caret-color: var(--color-primary);
+
+        &:focus {
+            outline: 1px solid var(--color-primary);
+        }
+    }
+}

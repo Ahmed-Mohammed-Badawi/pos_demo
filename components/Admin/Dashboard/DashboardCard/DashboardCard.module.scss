@@ -1,0 +1,43 @@
+.Card{
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #fff;
+}
+
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .Content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+
+        h2{
+            font-family: var(--font-secondary);
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        
+        h3{
+            font-weight: 400;
+        }
+    }
+
+    .Icon_Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 1rem;
+
+        .Icon{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.Item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #eeeeee;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+
+    button.Add,
+    button.remove {
+        width: 3rem;
+        min-width: 30px;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        background-color: var(--color-quantity-background);
+        border-color: transparent;
+        border-radius: 1rem;
+        color: var(--color-quantity-text);
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    span {
+        text-align: right;
+
+        &.Span_1 {
+            width: 25%;
+        }
+
+        &.Span_2 {
+            direction: rtl;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            width: 33%;
+
+            .Input {
+                width: 4rem;
+                padding: 0.5rem;
+                background-color: transparent;
+                border: transparent;
+                text-align: center;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                &[type="number"] {
+                    -moz-appearance: textfield;
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1280px) {
+                gap: 0;
+            }
+        }
+
+        &.Span_3 {
+            width: 21%;
+            color: var(--color-item-price);
+        }
+
+        &.Span_4 {
+            width: 21%;
+            color: var(--color-item-price);
+        }
+    }
+
+    .DeleteButton {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0%, -50%);
+        background-color: transparent;
+        border: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.2);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.SwiperButton{
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.4rem;
+    border: 0;
+    background-color: var(--color-swiper-button);
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    
+    &:hover{
+        background-color: var(--color-primary);
+    }
+}
+
+.Active{
+    color: #ffffff;
+    background-color: var(--color-primary);
+    box-shadow: inset 0 0 .3rem rgba(0, 0, 0, 0.2);
+}

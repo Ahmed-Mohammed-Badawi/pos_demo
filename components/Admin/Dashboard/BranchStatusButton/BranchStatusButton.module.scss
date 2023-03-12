@@ -1,0 +1,22 @@
+.B_Button{
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    padding: .5rem 1rem .7rem;
+    background-color: var(--color-item-price);
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &.Active{
+        background-color: rgb(226, 133, 86);
+    }
+    
+    &.UnActive{
+        background-color: var(--color-paynow-button);
+    }
+
+    &:active{
+        transform: scale(.9);
+    }
+}

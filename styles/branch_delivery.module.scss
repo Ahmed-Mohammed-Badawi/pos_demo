@@ -1,0 +1,221 @@
+.Top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.Navigation {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    min-width: 15rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    & > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 7.5rem;
+        background-color: #eff3f7;
+        border-radius: 0.5rem;
+        transition: transform 0.15s ease-in-out;
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &_Item {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        img {
+            pointer-events: none;
+        }
+    }
+
+    &_Logout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        padding: 1rem;
+        width: 6rem;
+        height: 6rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        transition: transform 0.15s ease-in-out;
+        cursor: pointer;
+
+        svg path {
+            fill: #f62947;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+        &.Pos_Version{
+            height: 5rem;
+            margin-left: 0;
+            border: 1px solid #e0e0e0;
+        }
+    }
+}
+
+.Bottom {
+    height: 100%;
+    direction: rtl;
+
+    .Table {
+        width: 100%;
+        max-height: 100%;
+        background-color: #fff;
+        border-radius: 6px;
+
+        &__Content {
+            overflow: auto;
+            scrollbar-width: 3px;
+            scrollbar-color: var(--color-primary) #ddd;
+            max-height: calc(100vh - 23rem);
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: var(--color-primary);
+                border-radius: 10px;
+            }
+
+            & > div:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            & > div:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+
+            & > div:not(:last-child) {
+                border-bottom: 1px solid #e9ecef;
+            }
+        }
+
+        .Head {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            padding: 0rem 3rem;
+            font-size: 1.6rem;
+            gap: 3rem;
+            background-color: #f8f9fa;
+        }
+
+        .Row {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            padding: 0rem 3rem;
+            font-size: 1.5rem;
+            color: var(--color-item-price);
+            gap: 3rem;
+        }
+
+        .Cell_TD {
+            display: flex;
+            align-items: center;
+            padding: 2.2rem 0.5rem;
+
+            &:nth-child(1) {
+                justify-content: flex-start;
+                gap: 1rem;
+                width: 10%;
+            }
+
+            &:nth-child(2) {
+                justify-content: flex-start;
+                width: 25%;
+            }
+
+            &:nth-child(3) {
+                justify-content: flex-start;
+                width: 40%;
+            }
+
+            &:nth-child(4) {
+                justify-content: flex-start;
+                width: 10%;
+            }
+
+            &:last-child {
+                justify-content: flex-start;
+                gap: 1rem;
+                width: 15%;
+            }
+
+            .Button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                border: 1px solid #eee;
+                background-color: #fff;
+                box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
+                transition: all 0.15s ease-in-out;
+                cursor: pointer;
+
+                & img {
+                    pointer-events: none;
+                }
+
+                &:active {
+                    transform: scale(0.9);
+                    box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.16);
+                }
+            }
+        }
+        .Cell {
+            padding: 1.5rem 0.5rem;
+
+            &:nth-child(1) {
+                width: 10%;
+            }
+
+            &:nth-child(2) {
+                text-align: right;
+                width: 25%;
+            }
+
+            &:nth-child(3) {
+                text-align: right;
+                width: 40%;
+            }
+
+            &:nth-child(4) {
+                text-align: right;
+                width: 10%;
+            }
+
+            &:last-child {
+                width: 15%;
+                text-align: right;
+            }
+        }
+    }
+}

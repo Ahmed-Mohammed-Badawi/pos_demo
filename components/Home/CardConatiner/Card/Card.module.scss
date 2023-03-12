@@ -1,0 +1,74 @@
+.Card {
+    position: relative;
+    width: calc(25% - 20px);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 16px;
+    height: 16rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06),
+        0 1px 4px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    overflow: hidden;
+
+    .Image_Container {
+        position: relative;
+        height: 10rem;
+        width: 100%;
+        pointer-events: none;
+
+        .Image {
+            position: absolute;
+            top: 0.2rem;
+            left: 0.2rem;
+            right: 0.2rem;
+            bottom: 0.2rem;
+            width: calc(100% - 0.4rem);
+            height: calc(100% - 0.4rem);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+
+    .Price {
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        padding: 0.2rem;
+        min-width: 5rem;
+        text-align: center;
+        font-size: 1.3rem;
+        color: white;
+        background-color: var(--color-primary);
+        border-radius: 3px;
+    }
+
+    .Content {
+        padding: 0.5rem;
+        pointer-events: none;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin-bottom: 0.7rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: var(--color-item-price);
+        }
+    }
+
+    &.Selected {
+        outline: 1px solid #6571ff !important;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        width: calc(33% - 20px);
+    }
+}

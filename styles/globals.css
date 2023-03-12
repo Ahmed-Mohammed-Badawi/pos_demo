@@ -1,0 +1,69 @@
+:root{
+  /* Colors */
+  --color-background: #eff3f7;
+  --color-swiper-button: #eff3f6;
+  --color-white-background: #ffffff;
+  --color-white-text: #ffffff;
+  --color-item-price: #6c757d;
+  --color-quantity-background: #e0e3ff;
+  --color-quantity-text: #6571ff;
+  --color-primary: #6571ff;
+  --color-paynow-button: #0ac074;
+  --color-reset-button: #f62947;
+  --color-list-hover-background: #e0e3ff;
+  /* Fonts */
+  --font-main: 'Almarai', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  /* Radius */
+  --radius-05: .5rem;
+  --radius-1: 1rem;
+}
+
+
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%; 
+}
+
+body{
+  font-family: var(--font-main);
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+}
+
+
+/* Container */
+.Container{
+  padding: 1.5rem;
+  max-width: 1920px;
+  margin: auto;
+}
+.Container-dashboard{
+  max-width: 1920px;
+  margin: auto;
+}
+
+.Inner_Container{
+  padding: 3rem 5rem;
+}
+
+
+/* SWIPER */
+/* Reset for Swiper */
+
+.swiper-wrapper{
+  background-color: white;
+  cursor: pointer;
+}
+
+.swiper-slide{
+  width: auto !important;
+  cursor: pointer;
+}

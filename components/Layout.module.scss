@@ -1,0 +1,13 @@
+.Flex {
+    direction: rtl;
+    display: flex;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .Content{
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 7rem);
+    }
+}

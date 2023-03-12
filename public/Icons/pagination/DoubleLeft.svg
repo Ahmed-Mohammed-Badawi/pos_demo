@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24">
+  <g id="DoubleLeft" transform="translate(29 24) rotate(180)">
+    <g id="Group_1" data-name="Group 1">
+      <g id="Hicon_Linear_Right_2" data-name="Hicon / Linear / Right 2">
+        <g id="Right_2" data-name="Right 2" transform="translate(10 7)">
+          <path id="Vector" d="M0,0,1.763,1.747C3.169,3.141,3.872,3.837,3.98,4.687a2.478,2.478,0,0,1,0,.627c-.108.849-.811,1.546-2.217,2.939L0,10" fill="none" stroke="#6571ff" stroke-linecap="round" stroke-width="1.5"/>
+        </g>
+      </g>
+      <g id="Hicon_Linear_Right_2-2" data-name="Hicon / Linear / Right 2" transform="translate(5)">
+        <g id="Right_2-2" data-name="Right 2" transform="translate(10 7)">
+          <path id="Vector-2" data-name="Vector" d="M0,0,1.763,1.747C3.169,3.141,3.872,3.837,3.98,4.687a2.478,2.478,0,0,1,0,.627c-.108.849-.811,1.546-2.217,2.939L0,10" fill="none" stroke="#6571ff" stroke-linecap="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

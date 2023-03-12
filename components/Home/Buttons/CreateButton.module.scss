@@ -1,0 +1,19 @@
+.Create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--color-paynow-button);
+    color: white;
+    border: transparent;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+
+    &:active{
+        transform: scale(.9);
+    }
+}

@@ -1,0 +1,6 @@
+<svg id="Delete" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Delete_2" data-name="Delete 2">
+    <path id="Vector" d="M4,4a4,4,0,0,1,8,0V5H4Z" transform="translate(4 2)" fill="none" stroke="#f62947" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M15,7c-.093.978-.262,2.19-.483,3.779l-.262,1.885a20.516,20.516,0,0,1-.73,3.9,5.3,5.3,0,0,1-2.709,3.177A7.552,7.552,0,0,1,8,20a7.552,7.552,0,0,1-2.816-.263A5.3,5.3,0,0,1,2.475,16.56a20.516,20.516,0,0,1-.73-3.9L1.483,10.78C1.262,9.19,1.093,7.978,1,7M16,5H0M6,8v8m4-8v8" transform="translate(4 2)" fill="none" stroke="#f62947" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>
