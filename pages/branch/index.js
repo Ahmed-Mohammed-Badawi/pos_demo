@@ -50,7 +50,7 @@ function Delivery() {
         // Axios
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/cashier/pending/orders`,
+                `https://posapi.kportals.net/api/v1/cashier/pending/orders`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -91,7 +91,7 @@ function Delivery() {
     function printHandler(orderId) {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -120,7 +120,7 @@ function Delivery() {
     function deleteOrderHandler(orderId) {
         axios
             .delete(
-                `https://baharapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",

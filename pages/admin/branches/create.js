@@ -47,7 +47,7 @@ function Create() {
         // Send the request
         axios
             .post(
-                "https://baharapi.kportals.net/api/v1/create/branch",
+                "https://posapi.kportals.net/api/v1/create/branch",
                 {
                     branchName: branchName,
                     branchAddress: branchAddress,

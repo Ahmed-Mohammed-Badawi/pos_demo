@@ -57,7 +57,7 @@ function Create({ id, name }) {
         // send the request
         axios
             .put(
-                `https://baharapi.kportals.net/api/v1/edit/unit`,
+                `https://posapi.kportals.net/api/v1/edit/unit`,
                 { unitName: unitName, unitValue: minUnit, unitId: id },
                 {
                     headers: {

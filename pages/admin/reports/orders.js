@@ -53,7 +53,7 @@ function Orders() {
         // Send the request
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/order/report`,
+                `https://posapi.kportals.net/api/v1/order/report`,
                 {
                     params: {
                         dateFrom: startingFrom,
@@ -87,7 +87,7 @@ function Orders() {
     // Effect to get branches
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/branches/list`, {
+            .get(`https://posapi.kportals.net/api/v1/get/branches/list`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

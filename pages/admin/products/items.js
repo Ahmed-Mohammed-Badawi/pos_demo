@@ -38,7 +38,7 @@ function Dashboard() {
     useEffect(() => {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/get/all/items?page=${currentPage}`,
+                `https://posapi.kportals.net/api/v1/get/all/items?page=${currentPage}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(

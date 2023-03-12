@@ -61,7 +61,7 @@ function Navbar() {
             // send the request to the back
             axios
                 .get(
-                    `https://baharapi.kportals.net/api/v1/get/user?userId=${login_id}`,
+                    `https://posapi.kportals.net/api/v1/get/user?userId=${login_id}`,
                     {
                         headers: {
                             "Content-Type": "application/json",

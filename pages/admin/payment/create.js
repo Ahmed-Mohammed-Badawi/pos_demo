@@ -42,7 +42,7 @@ function Create() {
         // Send the request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/create/payment`,
+                `https://posapi.kportals.net/api/v1/create/payment`,
                 {
                     paymentMethod: paymentName,
                 },

@@ -29,10 +29,10 @@ function SearchInput({roleValue, resetTheLastPage}) {
     // Handlers
     const handleSubmit = async (e) => {
         //Set the url
-        let url = `https://baharapi.kportals.net/api/v1/callcenter/search?searchCategory=`;
+        let url = `https://posapi.kportals.net/api/v1/callcenter/search?searchCategory=`;
         //check if user is a cashier
         if(roleValue === "cashier"){
-            url = `https://baharapi.kportals.net/api/v1/cashier/search?searchCategory=`
+            url = `https://posapi.kportals.net/api/v1/cashier/search?searchCategory=`
         }
 
 

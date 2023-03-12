@@ -27,7 +27,7 @@ function Payment() {
 
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/payments`, {
+            .get(`https://posapi.kportals.net/api/v1/get/payments`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

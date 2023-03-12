@@ -98,19 +98,19 @@ export default function Home({roleValue}) {
             dispatch(setActiveCategory({ category: "الكل" }));
         }
         // init the url
-        let url = `https://baharapi.kportals.net/api/v1/items?page=${currentPage}`;
+        let url = `https://posapi.kportals.net/api/v1/items?page=${currentPage}`;
 
         if (ActiveCategoryId) {
-            url = `https://baharapi.kportals.net/api/v1/cate/items?page=${currentPage}&categoryId=${ActiveCategoryId}`;
+            url = `https://posapi.kportals.net/api/v1/cate/items?page=${currentPage}&categoryId=${ActiveCategoryId}`;
         }
 
         //Check if user is a cashier
         if(roleValue === 'cashier'){
-            url = `https://baharapi.kportals.net/api/v1/cashier/items?page=${currentPage}`;
+            url = `https://posapi.kportals.net/api/v1/cashier/items?page=${currentPage}`;
         }
 
         if(roleValue === 'cashier' && ActiveCategoryId){
-            url = `https://baharapi.kportals.net/api/v1/cashier/cate/items?page=${currentPage}&categoryId=${ActiveCategoryId}`;
+            url = `https://posapi.kportals.net/api/v1/cashier/cate/items?page=${currentPage}&categoryId=${ActiveCategoryId}`;
         }
 
         // Get the Data of All
@@ -152,10 +152,10 @@ export default function Home({roleValue}) {
         // Get All Categories from the server
         let url;
         if(roleValue === 'callcenter'){
-            url = `https://baharapi.kportals.net/api/v1/categories`;
+            url = `https://posapi.kportals.net/api/v1/categories`;
         }
         if(roleValue === 'cashier'){
-            url = `https://baharapi.kportals.net/api/v1/cashier/categories`;
+            url = `https://posapi.kportals.net/api/v1/cashier/categories`;
         }
 
         axios
@@ -217,7 +217,7 @@ export default function Home({roleValue}) {
                                     activeCategory={ActiveCategory}
                                 />
                                 <Swiper
-                                    loop={categories.length > 0}
+                                    loop={categories.length > 7}
                                     slidesPerView={"auto"}
                                     spaceBetween={15}
                                     dir={"rtl"}

@@ -49,7 +49,7 @@ function Discount() {
         // Send the REquest
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/set/discount`,
+                `https://posapi.kportals.net/api/v1/set/discount`,
                 {
                     discountType: type,
                     discountAmount: amount,

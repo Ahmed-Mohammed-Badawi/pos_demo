@@ -55,7 +55,7 @@ function Edit({ id, name }) {
         // Send the request
         axios
             .put(
-                "https://baharapi.kportals.net/api/v1/edit/branch",
+                "https://posapi.kportals.net/api/v1/edit/branch",
                 {
                     branchName: branchName,
                     branchAddress: branchAddress,

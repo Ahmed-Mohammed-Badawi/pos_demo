@@ -7,6 +7,7 @@ import Head from "next/head";
 // IMPORTS
 import LogoutIcon from "@/components/SVGS/LogoutIcon";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 function Today_orders() {
     //State of orders
@@ -16,7 +17,7 @@ function Today_orders() {
     useEffect(() => {
         // Axios
         axios
-            .get(`https://baharapi.kportals.net/api/v1/toady/orders`, {
+            .get(`https://posapi.kportals.net/api/v1/toady/orders`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -53,7 +54,7 @@ function Today_orders() {
     function printHandler(orderId) {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -73,7 +74,7 @@ function Today_orders() {
     function deleteOrderHandler(orderId) {
         axios
             .delete(
-                `https://baharapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -84,6 +85,11 @@ function Today_orders() {
                 }
             )
             .then((res) => {
+                // Hide the Remove Button from the removed Orders
+                // get the order by it's id
+                let selectedOrder = document.getElementById(`${orderId}`);
+                selectedOrder.classList.add(classes.HideRemove);
+
                 //Show a notification
                 toast.success("Order Cancelled");
             })
@@ -214,7 +220,11 @@ function Today_orders() {
                             {orders &&
                                 orders.map((order, i) => {
                                     return (
-                                        <div key={order._id} className={classes.Row}>
+                                        <div
+                                            key={order._id}
+                                            className={classes.Row}
+                                            id={order._id}
+                                        >
                                             <span className={classes.Cell_TD}>
                                                 #{order.orderNumber}
                                             </span>
@@ -252,6 +262,7 @@ function Today_orders() {
                                                 </button>
                                                 <button
                                                     title='حذف'
+                                                    name='delete'
                                                     type='button'
                                                     className={classes.Button}
                                                     onClick={() => {

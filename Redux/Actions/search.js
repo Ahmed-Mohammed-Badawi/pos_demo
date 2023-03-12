@@ -3,7 +3,7 @@ import axios from "axios";
 
 const fetchData = createAsyncThunk("fetchData/tables", async (data) => {
     const result = await axios.get(
-        `https://baharapi.kportals.net/api/v1/search?searchCategory=${data.searchSection}&searchTerm=${data.searchKeyword || ''}`,
+        `https://posapi.kportals.net/api/v1/search?searchCategory=${data.searchSection}&searchTerm=${data.searchKeyword || ''}`,
         {
             headers: {
                 "Content-Type": "application/json",

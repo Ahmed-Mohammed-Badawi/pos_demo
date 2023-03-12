@@ -49,7 +49,7 @@ function Tax() {
         // Send the REquest
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/set/tax`,
+                `https://posapi.kportals.net/api/v1/set/tax`,
                 {
                     taxRate: TaxAmount,
                 },

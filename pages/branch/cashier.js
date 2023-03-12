@@ -37,7 +37,7 @@ function Cashier() {
     useEffect(() => {
         // Axios
         axios
-            .get(`https://baharapi.kportals.net/api/v1/delivery/orders`, {
+            .get(`https://posapi.kportals.net/api/v1/delivery/orders`, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -127,7 +127,7 @@ function Cashier() {
     function printHandler(orderId) {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/cashier/print/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -153,7 +153,7 @@ function Cashier() {
         // Send A request to change the order state to be completed
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/finish/order`,
+                `https://posapi.kportals.net/api/v1/finish/order`,
                 {
                     orderId: Id,
                     paymentMethod: selectValue,
@@ -188,7 +188,7 @@ function Cashier() {
         // Send the Request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/cashbox/close`,
+                `https://posapi.kportals.net/api/v1/cashbox/close`,
                 {
                     cashierId: cashier_id,
                 },
@@ -223,7 +223,7 @@ function Cashier() {
     function getCashBoxHandler(cashierId) {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/cashbox?cashierId=${cashierId}`,
+                `https://posapi.kportals.net/api/v1/cashbox?cashierId=${cashierId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",
@@ -256,7 +256,7 @@ function Cashier() {
         // Send the Request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/cashbox/open`,
+                `https://posapi.kportals.net/api/v1/cashbox/open`,
                 {
                     cashierId: cashier_id,
                     cashboxId: cash_box_id,
@@ -287,7 +287,7 @@ function Cashier() {
     function deleteOrderHandler(orderId) {
         axios
             .delete(
-                `https://baharapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
+                `https://posapi.kportals.net/api/v1/delete/order?orderId=${orderId}`,
                 {
                     headers: {
                         "Content-Type": "application/json",

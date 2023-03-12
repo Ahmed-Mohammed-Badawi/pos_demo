@@ -29,7 +29,7 @@ function Units() {
 
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/all/units`, {
+            .get(`https://posapi.kportals.net/api/v1/get/all/units`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

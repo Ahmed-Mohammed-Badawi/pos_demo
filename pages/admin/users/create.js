@@ -93,7 +93,7 @@ function Create() {
         // Send the Request
         axios
             .post(
-                "https://baharapi.kportals.net/api/v1/create/user",
+                "https://posapi.kportals.net/api/v1/create/user",
                 {
                     fullName: user_name,
                     username: userName,
@@ -127,7 +127,7 @@ function Create() {
     // Effect to get branches
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/branches/list`, {
+            .get(`https://posapi.kportals.net/api/v1/get/branches/list`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

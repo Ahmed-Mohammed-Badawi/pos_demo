@@ -53,7 +53,7 @@ function Meals() {
         // Send the request
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/best/seller/meal`,
+                `https://posapi.kportals.net/api/v1/best/seller/meal`,
                 {
                     params: {
                         dateFrom: startingFrom,
@@ -87,7 +87,7 @@ function Meals() {
     // Effect to get branches
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/branches/list`, {
+            .get(`https://posapi.kportals.net/api/v1/get/branches/list`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

@@ -84,7 +84,7 @@ function PayButton({ roleValue }) {
         // Send the Create Request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/cashier/create/order`,
+                `https://posapi.kportals.net/api/v1/cashier/create/order`,
                 dataObj,
                 {
                     headers: {

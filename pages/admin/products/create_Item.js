@@ -36,7 +36,7 @@ function Create() {
     // get All the Categories
     useEffect(() => {
         axios
-            .get("https://baharapi.kportals.net/api/v1/get/all/categories", {
+            .get("https://posapi.kportals.net/api/v1/get/all/categories", {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -61,7 +61,7 @@ function Create() {
 
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/all/units`, {
+            .get(`https://posapi.kportals.net/api/v1/get/all/units`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
@@ -115,7 +115,7 @@ function Create() {
         // send the request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/create/item`,
+                `https://posapi.kportals.net/api/v1/create/item`,
                 create_formData,
                 {
                     headers: {

@@ -36,7 +36,7 @@ function Edit_Item({ id, name }) {
     // get All the Categories
     useEffect(() => {
         axios
-            .get("https://baharapi.kportals.net/api/v1/get/all/categories", {
+            .get("https://posapi.kportals.net/api/v1/get/all/categories", {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -61,7 +61,7 @@ function Edit_Item({ id, name }) {
 
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/all/units`, {
+            .get(`https://posapi.kportals.net/api/v1/get/all/units`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
@@ -127,7 +127,7 @@ function Edit_Item({ id, name }) {
         setLoading(true);
         // send the request
         axios
-            .put(`https://baharapi.kportals.net/api/v1/edit/item`, edit_formData, {
+            .put(`https://posapi.kportals.net/api/v1/edit/item`, edit_formData, {
                 headers: {
                     // set the headers with the Authorization
                     "Content-Type": "multipart/form-data",

@@ -48,7 +48,7 @@ function Create() {
         // send the request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/create/unit`,
+                `https://posapi.kportals.net/api/v1/create/unit`,
                 { unitName: unitName, unitValue: minUnit },
                 {
                     headers: {

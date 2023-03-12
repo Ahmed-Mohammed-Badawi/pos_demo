@@ -63,7 +63,7 @@ function Reset_Password({ id, user_name }) {
         // send the request
         axios
             .put(
-                `https://baharapi.kportals.net/api/v1/reset/password`,
+                `https://posapi.kportals.net/api/v1/reset/password`,
                 {
                     userId: id,
                     newPassword: userPassword,

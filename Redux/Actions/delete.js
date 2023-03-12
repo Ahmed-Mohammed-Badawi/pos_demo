@@ -4,7 +4,7 @@ import axios from "axios";
 // delete user
 const deleteUser = createAsyncThunk("user/deleteUser", async (id, thunkAPI) => {
     const data = await axios.delete(
-        `https://baharapi.kportals.net/api/v1/remove/user?userId=${id}`,
+        `https://posapi.kportals.net/api/v1/remove/user?userId=${id}`,
         {
             headers: {
                 "Content-Type": "application/json",
@@ -20,7 +20,7 @@ const deleteCategory = createAsyncThunk(
     "category/deleteCategory",
     async (id, thunkAPI) => {
         const data = await axios.delete(
-            `https://baharapi.kportals.net/api/v1/remove/category?categoryId=${id}`,
+            `https://posapi.kportals.net/api/v1/remove/category?categoryId=${id}`,
             {
                 headers: {
                     "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const deleteCategory = createAsyncThunk(
 // delete item
 const deleteItem = createAsyncThunk("Item/deleteItem", async (id, thunkAPI) => {
     const data = await axios.delete(
-        `https://baharapi.kportals.net/api/v1/delete/item?itemId=${id}`,
+        `https://posapi.kportals.net/api/v1/delete/item?itemId=${id}`,
         {
             headers: {
                 "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const deleteItem = createAsyncThunk("Item/deleteItem", async (id, thunkAPI) => {
 // delete Unit
 const deleteUnit = createAsyncThunk("Unit/deleteUnit", async (id, thunkAPI) => {
     const data = await axios.delete(
-        `https://baharapi.kportals.net/api/v1/delete/unit?unitId=${id}`,
+        `https://posapi.kportals.net/api/v1/delete/unit?unitId=${id}`,
         {
             headers: {
                 "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const deleteBranch = createAsyncThunk(
     "Branch/deleteBranch",
     async (id, thunkAPI) => {
         const data = await axios.delete(
-            `https://baharapi.kportals.net/api/v1/remove/branch?branchId=${id}`,
+            `https://posapi.kportals.net/api/v1/remove/branch?branchId=${id}`,
             {
                 headers: {
                     "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const deletePayment = createAsyncThunk(
     "Payment/deletePayment",
     async (id, thunkAPI) => {
         const data = await axios.delete(
-            `https://baharapi.kportals.net/api/v1/delete/payment?paymentId=${id}`,
+            `https://posapi.kportals.net/api/v1/delete/payment?paymentId=${id}`,
             {
                 headers: {
                     "Content-Type": "application/json",

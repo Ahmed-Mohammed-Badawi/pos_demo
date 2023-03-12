@@ -80,7 +80,7 @@ function Edit_User({ id, name }) {
         // Send the Request
         axios
             .put(
-                "https://baharapi.kportals.net/api/v1/edit/user",
+                "https://posapi.kportals.net/api/v1/edit/user",
                 {
                     fullName: user_name,
                     username: userName,
@@ -115,7 +115,7 @@ function Edit_User({ id, name }) {
     // Effect to get branches
     useEffect(() => {
         axios
-            .get(`https://baharapi.kportals.net/api/v1/get/branches/list`, {
+            .get(`https://posapi.kportals.net/api/v1/get/branches/list`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

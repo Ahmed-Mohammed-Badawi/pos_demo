@@ -45,7 +45,7 @@ function Users() {
     const loadUsers = (page) => {
         const result = axios
             .get(
-                `https://baharapi.kportals.net/api/v1/get/all/users?page=${page}`,
+                `https://posapi.kportals.net/api/v1/get/all/users?page=${page}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -74,7 +74,7 @@ function Users() {
         // Send the request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/set/user/status`,
+                `https://posapi.kportals.net/api/v1/set/user/status`,
                 {
                     userId: id,
                     flag: status,

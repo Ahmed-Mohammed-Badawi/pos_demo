@@ -43,7 +43,7 @@ function Create() {
         // send the request
         axios
             .post(
-                `https://baharapi.kportals.net/api/v1/create/category`,
+                `https://posapi.kportals.net/api/v1/create/category`,
                 { categoryName },
                 {
                     headers: {

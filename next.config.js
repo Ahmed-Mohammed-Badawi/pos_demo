@@ -24,7 +24,7 @@ const nextConfig = {
         return config;
     },
     images: {
-        domains: ["baharapi.kportals.net", "bahar.kportals.net"],
+        domains: ["posapi.kportals.net", "bahar.kportals.net"],
     },
 };
 

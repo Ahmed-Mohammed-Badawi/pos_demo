@@ -43,7 +43,7 @@ function Branches() {
     async function loadBranches(page) {
         const result = axios
             .get(
-                `https://baharapi.kportals.net/api/v1/get/branches?page=${page}`,
+                `https://posapi.kportals.net/api/v1/get/branches?page=${page}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -72,7 +72,7 @@ function Branches() {
         // Send the request
         axios
             .put(
-                `https://baharapi.kportals.net/api/v1/set/branch/status`,
+                `https://posapi.kportals.net/api/v1/set/branch/status`,
                 {
                     branchId: id,
                     status: status,

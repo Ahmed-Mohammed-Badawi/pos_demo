@@ -38,7 +38,7 @@ function Categories() {
     useEffect(() => {
         axios
             .get(
-                `https://baharapi.kportals.net/api/v1/get/categories?page=${currentPage}`,
+                `https://posapi.kportals.net/api/v1/get/categories?page=${currentPage}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(

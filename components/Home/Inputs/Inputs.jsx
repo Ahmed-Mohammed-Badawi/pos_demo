@@ -84,12 +84,12 @@ function Inputs({ roleValue }) {
     // Effect to get the settings && Branches && Payment Methods
     useEffect(() => {
         //Set the url based on who is login
-        let url = `https://baharapi.kportals.net/api/v1/settings`;
-        let branch_url = `https://baharapi.kportals.net/api/v1/branches`;
+        let url = `https://posapi.kportals.net/api/v1/settings`;
+        let branch_url = `https://posapi.kportals.net/api/v1/branches`;
 
         if (roleValue === "cashier") {
-            url = `https://baharapi.kportals.net/api/v1/cashier/settings`;
-            branch_url = `https://baharapi.kportals.net/api/v1/cashier/branches`;
+            url = `https://posapi.kportals.net/api/v1/cashier/settings`;
+            branch_url = `https://posapi.kportals.net/api/v1/cashier/branches`;
         }
 
         // Get Settings
@@ -147,7 +147,7 @@ function Inputs({ roleValue }) {
             // Get Payment Methods
             axios
                 .get(
-                    `https://baharapi.kportals.net/api/v1/cashier/payment/methods`,
+                    `https://posapi.kportals.net/api/v1/cashier/payment/methods`,
                     {
                         headers: {
                             "Content-Type": "application/json",
@@ -207,10 +207,10 @@ function Inputs({ roleValue }) {
     //Effect to get the user info
     useEffect(() => {
         // Get user info url
-        let url = `https://baharapi.kportals.net/api/v1/client/info?phoneNumber=`;
+        let url = `https://posapi.kportals.net/api/v1/client/info?phoneNumber=`;
         //Check if user is a cashier
         if (roleValue === "cashier") {
-            url = `https://baharapi.kportals.net/api/v1/cashier/client/info?phoneNumber=`;
+            url = `https://posapi.kportals.net/api/v1/cashier/client/info?phoneNumber=`;
         }
 
         if (PhoneNumber?.length >= 7) {
@@ -259,10 +259,10 @@ function Inputs({ roleValue }) {
     //Effect to get the Area if the user was not in DB
     useEffect(() => {
         //Set the url
-        let url = `https://baharapi.kportals.net/api/v1/recommend/branch?address=`;
+        let url = `https://posapi.kportals.net/api/v1/recommend/branch?address=`;
         //check if user is a cashier
         if (roleValue === "cashier") {
-            url = `https://baharapi.kportals.net/api/v1/cashier/recommend/branch?address=`;
+            url = `https://posapi.kportals.net/api/v1/cashier/recommend/branch?address=`;
         }
 
         if (

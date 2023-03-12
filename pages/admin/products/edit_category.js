@@ -39,7 +39,7 @@ function Edit_Category({ id, name }) {
         // send the request
         axios
             .put(
-                `https://baharapi.kportals.net/api/v1/edit/category`,
+                `https://posapi.kportals.net/api/v1/edit/category`,
                 { categoryId: id, categoryName },
                 {
                     headers: {
