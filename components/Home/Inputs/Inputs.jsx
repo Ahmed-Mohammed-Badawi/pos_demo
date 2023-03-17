@@ -281,13 +281,15 @@ function Inputs({ roleValue }) {
                         },
                     })
                     .then((res) => {
-                        // set the Area Select Info
-                        dispatch(
-                            changeAreaSelect({
-                                label: res.data.branch.branchRegion,
-                                id: res.data.branch._id,
-                            })
-                        );
+                        if (roleValue !== "cashier") {
+                            // set the Area Select Info
+                            dispatch(
+                                changeAreaSelect({
+                                    label: res.data.branch.branchRegion,
+                                    id: res.data.branch._id,
+                                })
+                            );
+                        }
                     })
                     .catch((err) => {
                         console.log(err);

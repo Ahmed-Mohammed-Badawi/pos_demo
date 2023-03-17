@@ -43,7 +43,7 @@ function PayButton({ roleValue }) {
             return;
         }
 
-        if (!ClientName || ClientName?.length <= 3) {
+        if (!ClientName || ClientName?.length < 2) {
             toast.error(`Please Enter a valid Name`);
             return;
         }
